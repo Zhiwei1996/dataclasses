@@ -59,6 +59,8 @@ Tips:
 - Python 2 中不支持类型注解特性，类没有`__annotations__` 属性，需要通过自定义添加 `__annotations__` 
 - 由于自定义的 `__annotations__`  为无序字典，须以关键字显式传参，确保传参顺序正确
 - `dataclasses.make_dataclass` 暂不可用
+- 由于 python 2 类的 `__doc__` 属性不可写，暂时移除 `class doc-string`
+
 
 引用模块:
 - [dictproxyhack](https://github.com/eevee/dictproxyhack)
