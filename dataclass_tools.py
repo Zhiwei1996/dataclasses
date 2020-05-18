@@ -6,7 +6,7 @@ def add_slots(cls):
 
     # Make sure __slots__ isn't already set.
     if '__slots__' in cls.__dict__:
-        raise TypeError(f'{cls.__name__} already specifies __slots__')
+        raise TypeError('{} already specifies __slots__'.format(cls.__name__))
 
     # Create a new dict for our new class.
     cls_dict = dict(cls.__dict__)

@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open("README.rst") as readme:
+with open("README-en.rst") as readme:
     README = readme.read()
 
 setup(
